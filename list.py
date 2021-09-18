@@ -2,7 +2,7 @@
 
 import os 
 
-#Muestra el menu
+#Shows menu
 def menu():
     print("SISTEMA DE ANALISIS DE INGRESOS" + str("\n"))
     print("Ingrese 1 para cargar un nuevo dia de ingresos")
@@ -19,7 +19,7 @@ def menu():
         print("Error, operacion no valida")
     menu()
 
-#Carga un nuevo dia
+#Loads information
 def cargar():
     try:
         y = []
@@ -45,7 +45,7 @@ def cargar():
         print("Ha ocurrido un error, volviendo al menu" + str("\n"))
         menu()
 
-# Display el dia que se quiere analizar
+#Analyzes selected day
 def analizar():
     try:
         acu = int()
@@ -62,8 +62,7 @@ def analizar():
     except:
         print(str("\n") + "Ha ocurrido un error, volviendo al menu" + str("\n"))
 
-
-#Borrar un dia
+#Deletes a day
 def borrar():
     try:
         day = input("Ingrese el dia que quiere borrar: ")
@@ -72,5 +71,5 @@ def borrar():
     except:
         print(str("\n") + "Ha ocurrido un error, volviendo al menu" + str("\n"))
 
-#Programa principal
+#Main program
 menu()
