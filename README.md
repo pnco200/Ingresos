@@ -1,2 +1,2 @@
 # Ingresos
-This is a basic read, store and processing program of money income. 
+This is a basic program that allows you to store your money income and analyze it.
